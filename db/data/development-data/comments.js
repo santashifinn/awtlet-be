@@ -3,7 +3,7 @@ module.exports = [
     episode: 1,
     author: "santashi",
     body: "Testing...",
-    article_id: 1,
+    comic_id: 1,
     created_at: 1661529990000,
     likes: 0,
   },

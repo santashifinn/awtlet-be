@@ -19,7 +19,7 @@ const seed = ({ comicData, commentData }) => {
         episode INT NOT NULL,
         author VARCHAR NOT NULL,
         created_at TIMESTAMP DEFAULT NOW(),
-        likes INT DEFAULT 0 NOT NULL,
+        likes INT DEFAULT 0 NOT NULL
       );`);
     })
     .then(() => {
@@ -30,8 +30,8 @@ const seed = ({ comicData, commentData }) => {
         author VARCHAR NOT NULL,
         body VARCHAR NOT NULL,
         comic_id INT REFERENCES comics(comic_id) NOT NULL,
-        created_at TIMESTAMP DEFAULT NOW()
-        likes INT DEFAULT 0 NOT NULL,
+        created_at TIMESTAMP DEFAULT NOW(),
+        likes INT DEFAULT 0 NOT NULL
       );`);
     })
     .then(() => {
